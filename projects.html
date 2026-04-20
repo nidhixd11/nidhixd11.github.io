@@ -4,65 +4,101 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Nidhi Chaudhary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/4b8b0b0f0a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="bg-blur blur1"></div>
-  <div class="bg-blur blur2"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-  <header class="navbar">
-    <div class="logo">Nidhi<span>.</span></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html" class="active">Projects</a>
-      <a href="education.html">Education</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+  <div class="bg-grid"></div>
+  <div class="particles" id="particles"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">Nidhi<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="page-container">
-    <h1 class="page-title">Projects</h1>
+  <main class="page-main container">
+    <section class="page-hero reveal">
+      <p class="eyebrow">Portfolio Work</p>
+      <h1><span class="gradient-text">Projects</span></h1>
+      <p class="page-subtext">
+        A few things I have built across AI, web development, and software fundamentals.
+      </p>
+    </section>
 
-    <section class="card-grid">
-      <div class="project-card glass-card">
-        <div class="project-icon"><i class="fas fa-envelope-open-text"></i></div>
+    <section class="cards-grid projects-grid">
+      <article class="glass-card project-card reveal tilt-card">
+        <div class="project-top">
+          <span class="project-number">01</span>
+          <span class="project-chip">AI + Backend</span>
+        </div>
         <h2>AI-Powered Email Reply Generator</h2>
-        <p class="stack">Spring Boot • Spring AI • Gemini API • Chrome Extension</p>
+        <p class="project-stack">Spring Boot • Spring AI • Gemini API • Chrome Extension</p>
         <p>
           Developed a REST API using Spring Boot and Spring AI to generate
-          context-aware email replies. Improved drafting efficiency and built
-          a Gmail-integrated Chrome extension for faster response generation.
+          context-aware email replies. Improved drafting efficiency and built a
+          Gmail-integrated Chrome extension for faster response generation.
         </p>
-      </div>
+      </article>
 
-      <div class="project-card glass-card">
-        <div class="project-icon"><i class="fas fa-robot"></i></div>
+      <article class="glass-card project-card reveal tilt-card">
+        <div class="project-top">
+          <span class="project-number">02</span>
+          <span class="project-chip">Full Stack AI</span>
+        </div>
         <h2>Full-Stack AI MERN App</h2>
-        <p class="stack">MERN Stack • OpenAI • Hugging Face • MongoDB</p>
+        <p class="project-stack">MERN Stack • OpenAI • Hugging Face • MongoDB</p>
         <p>
           Built a full-stack AI application using MERN stack with OpenAI
           integration and MongoDB storage. Added Node.js and Express backend
           support with fallback model handling.
         </p>
-      </div>
+      </article>
 
-      <div class="project-card glass-card">
-        <div class="project-icon"><i class="fas fa-address-book"></i></div>
+      <article class="glass-card project-card reveal tilt-card">
+        <div class="project-top">
+          <span class="project-number">03</span>
+          <span class="project-chip">Core Programming</span>
+        </div>
         <h2>C++ Contact Management System</h2>
-        <p class="stack">C++ • File I/O • CRUD</p>
+        <p class="project-stack">C++ • File I/O • CRUD</p>
         <p>
-          Developed a console-based contact management system with CRUD features,
-          persistent storage using fstream, and optimized search operations for
-          faster contact lookup.
+          Developed a console-based contact management system with CRUD
+          features, persistent storage using fstream, and optimized search
+          operations for faster contact lookup.
         </p>
-      </div>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Nidhi Chaudhary • Projects</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nidhi Chaudhary • Projects</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

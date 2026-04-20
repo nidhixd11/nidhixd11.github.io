@@ -4,74 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Education | Nidhi Chaudhary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/4b8b0b0f0a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <div class="bg-blur blur1"></div>
-  <div class="bg-blur blur2"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-  <header class="navbar">
-    <div class="logo">Nidhi<span>.</span></div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html" class="active">Education</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+  <div class="bg-grid"></div>
+  <div class="particles" id="particles"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">Nidhi<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a class="active" href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="page-container">
-    <h1 class="page-title">Education</h1>
-
-    <section class="card-grid">
-      <div class="section-box glass-card">
-        <h2>Kalinga Institute of Industrial Technology</h2>
-        <p>Bachelor of Technology in Computer Science & Engineering</p>
-        <p>GPA: 8.22 / 10.00</p>
-        <p>June 2023 – Present</p>
-        <p>Bhubaneswar, India</p>
-      </div>
-
-      <div class="section-box glass-card">
-        <h2>Adamas International School</h2>
-        <p>ISC Board</p>
-        <p>GPA: 7.19 / 10.00</p>
-        <p>April 2023</p>
-        <p>Kolkata, India</p>
-      </div>
-
-      <div class="section-box glass-card">
-        <h2>Adamas International School</h2>
-        <p>ICSE Board</p>
-        <p>GPA: 9.5 / 10.00</p>
-        <p>April 2021</p>
-        <p>Kolkata, India</p>
-      </div>
+  <main class="page-main container">
+    <section class="page-hero reveal">
+      <p class="eyebrow">Academic Journey</p>
+      <h1><span class="gradient-text">Education</span></h1>
+      <p class="page-subtext">
+        My academic background, performance, and current career direction.
+      </p>
     </section>
 
-    <section class="mini-section">
-      <div class="info-box">
-        <h3>Academic Focus</h3>
-        <p>
-          Strong foundations in C++, Java, Python, Data Structures, Algorithms,
-          DBMS, Operating Systems, SQL, and practical software development.
-        </p>
-      </div>
+    <section class="timeline">
+      <article class="glass-card timeline-card reveal tilt-card">
+        <div class="timeline-dot"></div>
+        <h2>Kalinga Institute of Industrial Technology</h2>
+        <p class="edu-degree">Bachelor of Technology in Computer Science & Engineering</p>
+        <div class="edu-meta">
+          <span>GPA: 8.22 / 10.00</span>
+          <span>June 2023 – Present</span>
+          <span>Bhubaneswar, India</span>
+        </div>
+      </article>
 
-      <div class="info-box">
-        <h3>Goal</h3>
+      <article class="glass-card timeline-card reveal tilt-card">
+        <div class="timeline-dot"></div>
+        <h2>Adamas International School</h2>
+        <p class="edu-degree">ISC Board</p>
+        <div class="edu-meta">
+          <span>GPA: 7.19 / 10.00</span>
+          <span>April 2023</span>
+          <span>Kolkata, India</span>
+        </div>
+      </article>
+
+      <article class="glass-card timeline-card reveal tilt-card">
+        <div class="timeline-dot"></div>
+        <h2>Adamas International School</h2>
+        <p class="edu-degree">ICSE Board</p>
+        <div class="edu-meta">
+          <span>GPA: 9.5 / 10.00</span>
+          <span>April 2021</span>
+          <span>Kolkata, India</span>
+        </div>
+      </article>
+    </section>
+
+    <section class="cards-grid two-col">
+      <article class="glass-card reveal tilt-card">
+        <div class="section-tag">Academic Focus</div>
         <p>
-          Seeking Software Development Internship opportunities to apply technical
-          knowledge in real-world projects and grow as a developer.
+          Strong foundations in C++, Java, Python, Data Structures,
+          Algorithms, DBMS, Operating Systems, SQL, and practical software
+          development.
         </p>
-      </div>
+      </article>
+
+      <article class="glass-card reveal tilt-card">
+        <div class="section-tag">Goal</div>
+        <p>
+          Seeking Software Development Internship opportunities to apply
+          technical knowledge in real-world projects and grow as a developer.
+        </p>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Nidhi Chaudhary • Education</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nidhi Chaudhary • Education</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

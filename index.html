@@ -4,30 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nidhi Chaudhary | Portfolio</title>
+  <meta name="description" content="Nidhi Chaudhary - B.Tech CSE Student, Software Developer, AI Enthusiast" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/4b8b0b0f0a.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <div class="bg-blur blur1"></div>
-  <div class="bg-blur blur2"></div>
+<body class="home-page">
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
 
-  <header class="navbar">
-    <div class="logo">Nidhi<span>.</span></div>
-    <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="education.html">Education</a>
-      <a href="skills.html">Skills</a>
-      <a href="contact.html">Contact</a>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+  <div class="bg-grid"></div>
+  <div class="particles" id="particles"></div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a href="index.html" class="logo">Nidhi<span>.</span></a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main class="hero-page">
-    <section class="hero">
-      <div class="hero-left">
-        <p class="tag">B.Tech CSE Student • Software Developer • AI Enthusiast</p>
-        <h1>Hello, I'm <span>Nidhi Chaudhary</span></h1>
-
+  <main>
+    <section class="hero container reveal">
+      <div class="hero-content">
+        <p class="eyebrow">B.Tech CSE Student • Software Developer • AI Enthusiast</p>
+        <h1>
+          Hello, I'm <span class="gradient-text">Nidhi Chaudhary</span>
+        </h1>
         <p class="hero-text">
           Computer Science student at KIIT University with strong foundations in
           C++, Java, Python, DSA, DBMS, and Operating Systems. Passionate about
@@ -35,55 +56,56 @@
           Spring Boot, and REST APIs.
         </p>
 
-        <div class="hero-buttons">
-          <a href="projects.html" class="btn primary">View Projects</a>
-          <a href="resume.pdf" target="_blank" class="btn secondary">View Resume</a>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary magnetic">View Projects</a>
+          <a href="resume.pdf" class="btn btn-secondary magnetic" target="_blank">View Resume</a>
         </div>
 
-        <div class="quick-links">
-          <a href="mailto:nidhixd11@gmail.com" class="glass-card">
-            <i class="fas fa-envelope rotating-icon"></i>
-            <span>Email</span>
-          </a>
-
-          <button class="glass-card contact-btn" onclick="copyPhone()">
-            <i class="fas fa-phone rotating-icon"></i>
-            <span>Phone</span>
-          </button>
-
-          <a href="https://www.linkedin.com/in/nidhixd11/" target="_blank" class="glass-card">
-            <i class="fab fa-linkedin rotating-icon"></i>
-            <span>LinkedIn</span>
-          </a>
-
-          <a href="https://github.com/nidhixd11" target="_blank" class="glass-card">
-            <i class="fab fa-github rotating-icon"></i>
-            <span>GitHub</span>
-          </a>
-
-          <a href="resume.pdf" target="_blank" class="glass-card">
-            <i class="fas fa-file-alt rotating-icon"></i>
-            <span>Resume</span>
-          </a>
+        <div class="hero-links">
+          <a href="mailto:nidhixd11@gmail.com">Email</a>
+          <a href="contact.html">Phone</a>
+          <a href="https://www.linkedin.com/in/nidhixd11" target="_blank">LinkedIn</a>
+          <a href="https://github.com/nidhixd11" target="_blank">GitHub</a>
+          <a href="resume.pdf" target="_blank">Resume</a>
         </div>
       </div>
 
-      <div class="hero-right">
-        <div class="profile-card">
+      <div class="hero-visual">
+        <div class="profile-card tilt-card floating-card">
           <div class="profile-ring"></div>
+          <img src="profile.jpg" alt="Nidhi Photo" class="profile-image" />
 
-          <img src="profile.jpg" alt="Nidhi Photo" class="profile-image">
+          <div class="floating-badge badge-top">Open to Internship</div>
+          <div class="floating-badge badge-right">Full Stack + AI</div>
 
-          <div class="floating-badge badge1">C++</div>
-          <div class="floating-badge badge2">Java</div>
-          <div class="floating-badge badge3">AI</div>
+          <div class="tech-orbs">
+            <span>C++</span>
+            <span>Java</span>
+            <span>AI</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="mini-section">
-      <div class="info-box">
-        <h3>About Me</h3>
+    <section class="stats-section container reveal">
+      <div class="glass-card stat-card tilt-card">
+        <h3>100+</h3>
+        <p>Coding problems solved</p>
+      </div>
+      <div class="glass-card stat-card tilt-card">
+        <h3>AI</h3>
+        <p>Full-stack project experience</p>
+      </div>
+      <div class="glass-card stat-card tilt-card">
+        <h3>MERN</h3>
+        <p>REST APIs, Spring Boot, databases</p>
+      </div>
+    </section>
+
+    <section class="content-grid container">
+      <div class="glass-card about-card reveal tilt-card">
+        <div class="section-tag">About Me</div>
+        <h2>Building useful software with clean design and strong logic.</h2>
         <p>
           I enjoy solving coding problems, building practical software, and
           creating beautiful user experiences. I am currently looking for a
@@ -92,9 +114,9 @@
         </p>
       </div>
 
-      <div class="info-box">
-        <h3>Highlights</h3>
-        <ul>
+      <div class="glass-card highlight-card reveal tilt-card">
+        <div class="section-tag">Highlights</div>
+        <ul class="highlight-list">
           <li>100+ coding problems solved on coding platforms</li>
           <li>Built AI-powered full-stack projects</li>
           <li>Hands-on with Spring Boot, MERN, OpenAI, Gemini</li>
@@ -104,8 +126,10 @@
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 Nidhi Chaudhary • Crafted with style in dark mode</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Nidhi Chaudhary • Crafted with style in dark mode</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
